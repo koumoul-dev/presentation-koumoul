@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Introduction aux API web</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/sky.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img src="img/koumoul.png" alt="logo Koumoul" style="width:10%">
+				<h2>Koumoul</h2>
+				<h5>La donnée accessible</h5>
+				<a href="https://koumoul.com">koumoul.com</a> -
+				<a href="mailto:contact@koumoul.com">contact@koumoul.com</a>
+			</section>
+			<section>
+				<h4>La société</h4>
+				<section>
+					<h5>Koumoul</h5>
+					<ul>
+						<li>Fondée en avril 2017</li>
+						<li>Localisée dans le morbihan, siège social à Saint-Avé</li>
+						<li>Travail à distance, utilisation importante de la visio-conférence</li>
+						<li>2 personnes, objectif de 4 personnes fin 2018</li>
+						<li>Lien importants avec l'université, grosse part d'innovation</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Koumoul</h5>
+					<ul>
+						<li>Nuage en breton</li>
+						<li>Produire des service en ligne, dans le Cloud (Déploiement, maintenance, smartphones, ...)</li>
+						<li>Consommer des services du cloud (ex: herbergement, code source)</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Position d'éditeur</h5>
+					<ul>
+						<li>Production importante de code source</li>
+						<li>Produits et développements spécifiques</li>
+						<li>Intégration avec d'autres services (on aime faire les choses, mais on ne réinvente pas la roue à chaque fois)</li>
+						<li>Architecture Web moderne (servicialisée)</li>
+						<li>Mais réalisation de prestations spécifiques (source importante de financement)</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Acteur du monde opensource</h5>
+					<ul>
+						<li>Nous suivont ce mouvement depuis plus de 15 ans</li>
+						<li>Utilisation importante de logiciels et librairies opensource</li>
+						<li>Création et maintenance de logiciel et librairies opensource
+							<ul>
+								<li>Partage de données (Data Fair)</li>
+								<li>Gestion des comptes utilisateur (Simple Directory)</li>
+								<li>Documentation d'API</li>
+								<li>Beaucoup d'autres contributions</li>
+							</ul>
+						</li>
+						<li>Nous avons aussi du code propriétaire, fermé</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h4>Coeur de métier</h4>
+				<section>
+					<h5>La donnée FAIR</h5>
+					<ul>
+						<li>Terme emprunté à la recherche : Facile à trouver, Accessible, Interopérable et Réutilisable</li>
+						<li>En production : mettre en valeur les données des clients</li>
+						<li>En consommation : aider les clients à accéder à des données de références</li>
+						<li>Favoriser l'utilisation des données => applications</li>
+						<li>En mode ouvert (opendata) ou fermé (privé)</li>
+						<li>Maitriser l'accès et la visibilité des flux de données</li>
+						<li>Privilégier l'expérience utilisateur</li>
+					</ul>
+				</section>
+				<section>
+					schéma de la home page Koumoul
+				</section>
+				<section>
+					<h5>Jeux de données</h5>
+					<ul>
+						<li>Crées par les producteurs / contributeurs</li>
+						<li>Publication de fichiers tabulaires ou géographiques</li>
+						<li>Indexation textuelle (recherche fulltext) et géographique</li>
+						<li>Tuilage des données géographiques pour faciliter la consommation (adapté smartphone)</li>
+						<li>Sémantiser la donnée, vocabulaire réduit de concepts</li>
+						<li>Enrichissement possible</li>
+						<li>Approche pragmatique : accès en temps réel aux données</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Jeux de données (futur)</h5>
+					<ul>
+						<li>Multi-sources : agréger des jeux de données qui ont le même schéma</li>
+						<li>Permissions au niveau colonne. Ex : données sensibles qui restent privées</li>
+						<li>Détection automatique des concepts</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Services de données</h5>
+					<ul>
+						<li>Accéder aux données de référence en mode servicialisé</li>
+						<li>Mise à jour automatique, besoin limité de ressources pour la consommation</li>
+						<li>Contrat de service : stabilité</li>
+						<li>Base Sirène, Base d'adresses, données INSEE, cadastre, fonds de carte</li>
+						<li>Réexposer les données : filtres</li>
+						<li>Services fournis par Koumoul mais possibilité d'intégrer d'autres service</li>
+						<li>Standard à respecter pour exposer les service : OpenAPI 3.0</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Services de données (futur)</h5>
+					<ul>
+						<li>Autre services (Ex: RNA, Finess, ...)/li>
+						<li>Réentrance : datasets comme services de données</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h4>Documentation</h4>
+				<ul>
+					<li>Souvent négligées, pourtant vitale</li>
+					<li>Facilite la réutilisation</li>
+					<li>Si profits liés a l'utilisation, augmente les profits</li>
+					<li>Même en interne, même seul facilite la réutilisation. Je suis le premier lecteur de mes documentations d'API.</li>
+					<li>Utiliser des standard : le developpeur rentre plus facilement dans la documentation</li>
+				</ul>
+			</section>
+			<section>
+				<h4>Objectif</h4>
+				<ul>
+					<li>Utilisation par le maximum de monde</li>
+					<li>Un développeur doit pouvoir faire le premier appel en moins de 5 minutes</li>
+					<li>Bien comprendre l'intéret, la valeur ajoutée de votre API</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Merci !</h3> Des questions ?
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			}, {
+				src: 'plugin/markdown/markdown.js'
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}]
+		});
+	</script>
+</body>
+
+</html>
