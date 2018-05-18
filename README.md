@@ -9,8 +9,14 @@ Installer [reveal-cli](https://github.com/cesar/reveal-cli)
 npm install -g reveal-cli
 ```
 
-Cloner ce repo et :
+Voir cette présentation localement :
+
 ```
-cd path/to/project
+npm install
+npm start
+```
+
+Déployer :
+```
 reveal deploy
 ```
