@@ -20,6 +20,18 @@
    style="enable-background:new">
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient999">
+      <stop
+         style="stop-color:#82c2f7;stop-opacity:1"
+         offset="0"
+         id="stop995" />
+      <stop
+         style="stop-color:#82c2f7;stop-opacity:0"
+         offset="1"
+         id="stop997" />
+    </linearGradient>
     <filter
        style="color-interpolation-filters:sRGB"
        inkscape:label="Ombre1"
@@ -681,6 +693,30 @@
          result="composite2"
          id="feComposite5487-74-3" />
     </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient999"
+       id="radialGradient1003"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.98911427,-0.00812732,0.00697236,0.84855336,-0.24692089,22.422955)"
+       cx="69.752487"
+       cy="144.31534"
+       fx="69.752487"
+       fy="144.31534"
+       r="245.35341" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1009"
+       x="-0.011130719"
+       width="1.0222614"
+       y="-0.013016561"
+       height="1.0260331">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.2757999"
+         id="feGaussianBlur1011" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -690,8 +726,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="798.66207"
-     inkscape:cy="771.49628"
+     inkscape:cx="1017.1264"
+     inkscape:cy="993.5705"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -721,6 +757,14 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(176.13546,65.728226)">
+    <rect
+       style="opacity:0.56499999;fill:url(#radialGradient1003);fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1009)"
+       id="rect993"
+       width="490.70682"
+       height="419.61313"
+       x="-175.60092"
+       y="-65.491226"
+       transform="matrix(0.97769194,0,0,0.97136565,0.75423358,3.8651054)" />
     <path
        id="path60-3"
        d="m 69.350865,23.968524 c 0.003,-0.151 0.022,-0.298 0.022,-0.45 0,-10.22797 -8.28197,-18.5189398 -18.49994,-18.5189398 -7.06797,0 -13.20695,3.97199 -16.32094,9.8049698 -0.972,-0.347 -2.014,-0.545 -3.10399,-0.545 -5.10799,0 -9.24997,4.14599 -9.24997,9.25897 0,0.016 0.002,0.031 0.002,0.047 -8.24997,0.48 -14.79995,7.30998 -14.79995,15.68995 0,8.69297 7.03997,15.73995 15.72495,15.73995 h 42.55086 c 8.68497,0 15.72494,-7.04698 15.72494,-15.73995 0,-7.41998 -5.13998,-13.62996 -12.04996,-15.28995 z"
