@@ -1,4 +1,4 @@
-Cette présentation peut être visionnée [ici](https://koumoul-dev.github.io/intro-api-web/)
+Cette présentation peut être visionnée [ici](https://koumoul-dev.github.io/presentation-koumoul/)
 
 Elle a été faite avec [reveal.js](http://lab.hakim.se/reveal-js/#/)
 
