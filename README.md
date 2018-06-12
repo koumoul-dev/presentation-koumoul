@@ -16,8 +16,3 @@ Voir cette présentation localement :
 npm install
 npm start
 ```
-
-Déployer :
-```
-reveal deploy
-```
